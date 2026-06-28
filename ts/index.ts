@@ -1,19 +1,9 @@
-console.log("#19. TypeScript homework example file");
-
-/*
- * #1
- */
-
 function sumArray(numbers: number[]): number {
 	return numbers.reduce((sum, current) => sum + current, 0);
 }
 
-// console.log(sumArray([1, 2, 3, 4])) // 10
-// console.log(sumArray([])) // 0
-
-/*
- * #2
- */
+console.log(sumArray([1, 2, 3, 4])) // 10
+console.log(sumArray([])) // 0
 
 type User = {
 	name: string;
@@ -33,12 +23,8 @@ function createUser(
 	};
 }
 
-// const newUser = createUser("Анна", 25, true)
-// console.log(newUser)
-
-/*
- * #3
- */
+const newUser = createUser("Санёк", 32, true)
+console.log(newUser)
 
 enum OrderStatus {
 	Pending = "Pending",
@@ -66,9 +52,7 @@ function getOrderStatus(status: OrderStatus): string {
 	}
 }
 
-// console.log(getOrderStatus(OrderStatus.Pending))
-// console.log(getOrderStatus(OrderStatus.Shipped))
-// console.log(getOrderStatus(OrderStatus.Delivered))
-// console.log(getOrderStatus(OrderStatus.Cancelled))
-
-export { sumArray, createUser, OrderStatus, getOrderStatus };
+console.log(getOrderStatus(OrderStatus.Pending))
+console.log(getOrderStatus(OrderStatus.Shipped))
+console.log(getOrderStatus(OrderStatus.Delivered))
+console.log(getOrderStatus(OrderStatus.Cancelled))
